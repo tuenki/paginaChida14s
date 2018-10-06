@@ -8,27 +8,27 @@ session_start();
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <link rel="stylesheet" href="css/hover-min.css" media="all">
-
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/general.css">
+    <link rel="stylesheet" type="text/css" href="css/general.css">
 </head>
 
-<body class=" light-blue">
-  <div class="row centrar ">
-    <form class="col s12 " action="#" method="POST">
+<body class="light-blue">
+  <div class="row centrar">
+	<div class="card white">
+	<form class="col s12 " action="#" method="POST">
       <div class="row ">
         <div class="input-field col s6">
-          <i class="material-icons prefix">account_circle</i>
+          <i class="material-icons prefix black-text">account_circle</i>
           <input id="icon_prefix" type="text" name="frmuser" class="validate">
           <label for="icon_prefix">Usuario</label>
         </div>
        </div>
         <div class="row ">
 	        <div class="input-field col s6">
-	          <i class="material-icons prefix">lock</i>
+	          <i class="material-icons prefix black-text">lock</i>
 	          <input id="icon_telephone" type="password" name="frmpass" class="validate">
 	          <label for="icon_telephone">Clave</label>
 	        </div>
@@ -42,6 +42,7 @@ session_start();
         </div>
 
     </form>
+	</div>
   </div>
 <?php
 if(isset($_POST['btnlog']))
@@ -83,5 +84,8 @@ if(isset($_POST['btnlog']))
 	}
 }
 ?>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/avtivarlg.js"></script>
 </body>
 </html>
