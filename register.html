@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    <link rel="stylesheet" href="css/hover-min.css" media="all">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/hover-min.css" media="all">
+	
     <title>SIMUK</title>
     <style type="text/css">
     	html, body {
@@ -32,7 +33,145 @@
 			font-size: 45px;
     	}
 
-    </style>
+	</style>
+</head>
+
+<body class="grey lighten-3">
+	 <div class="row full">
+      <div class="col s6 full " id="bton" style="padding: 0px;">
+      	<!-- Registro normal -->
+      	<a onclick="FormAlumno();" class="waves-effect waves-light btn full">
+      	<div class="centrar">
+      		<p>Estudiante</p>
+      	</div>
+      </a>
+      </div>
+      <div class="col s6 full" id="bton2" style="padding: 0px;">
+      	<a onclick="FormInsti();"  class="waves-effect btn waves-red full">
+      		<div class="centrar">
+      		<p>Institucion</p>
+      		</div>
+      </a>
+      </div>
+      <div id="regAlumno" style="display: none"> 
+      	<div class="row">
+			<div class="section container">
+				<div class="row">
+					<div class="col s12 m4 l3"></div>
+					<div class="col s12 m4 l6">
+						<button onclick="AtrasFA();">Atras</button>
+						<div class="row card-panel">
+							<form action="">
+								<span class="card-title"><h5 class="center">Registro Estudiandante</h2></span>
+								<div class="input-field col s12">
+                					<i class="material-icons prefix">account_circle</i>
+                					<input id="name" type="text" name="frmname" class="validate" required>
+                					<label for="name">Nombre</label>
+								</div>
+								
+								<div class="input-field col s12">
+                					<i class="material-icons prefix">account_balance</i>
+                					<input id="name" type="text" name="frmname" class="validate" required>
+                					<label for="name">Instituto al que pertenece</label>
+								</div>
+								
+								<div class="input-field col s12">
+                					<i class="material-icons prefix">email</i>
+                					<input id="name" type="text" name="frmname" class="validate" required>
+                					<label for="name">Correo Electronico</label>
+								</div>
+								
+								<div class="input-field col s12">
+	          						<i class="material-icons prefix black-text">lock</i>
+	          						<input id="icon_telephone" type="password" name="frmpass" class="validate">
+	          						<label for="icon_telephone">Contraseña</label>
+								</div>
+								
+								<div class="input-field col s12">
+									<i class="material-icons prefix black-text">lock</i>
+									<input id="icon_telephone" type="password" name="frmpass" class="validate">
+									<label for="icon_telephone"> Confirme contraseña</label>
+								</div>
+
+								<div class="input-field col s6 offset-s6">
+				  					<button class="btn waves-effect blue" type="submit" name="btnlog">Registrar
+				   						<i class="material-icons right">send</i>
+				  					</button>
+        						</div>
+							</form>
+						</div>
+					</div>
+					<div class="col s12 m4 l3"></div>
+				</div>
+			</div>	
+			  	
+      	</div>
+      </div>
+      <div class="col s12 grey lighten-3" id="regInstitucion" style="display: none"> 
+      		<div class="row">
+			<div class="section container">
+				<div class="row">
+					<div class="col s12 m4 l3"></div>
+					<div class="col s12 m4 l6">
+						<button onclick="AtrasFA();">Atras</button>
+						<div class="row card-panel">
+							<form action="">
+								<span class="card-title"><h5 class="center">Registro de Institucion</h2></span>
+								<div class="input-field col s12">
+                        			<div class="file-field input-field">
+                            			<div class="btn">
+                                			<span>IMG</span>
+                               				<input type="file">
+                            			</div>
+                            			<div class="file-path-wrapper">
+                                			<input class="file-path validate" type="text" placeholder="Logo de la institucion">
+                            			</div>
+                        			</div>
+                    			</div>
+
+								<div class="input-field col s12">
+                					<i class="material-icons prefix">account_balance</i>
+                					<input id="name" type="text" name="frmname" class="validate" required>
+                					<label for="name">Nombre de la Institucion</label>
+								</div>
+								
+								<div class="input-field col s12">
+                					<i class="material-icons prefix">email</i>
+                					<input id="name" type="text" name="frmname" class="validate" required>
+                					<label for="name">Correo Electronico de la institucion</label>
+								</div>
+								
+								<div class="input-field col s12">
+	          						<i class="material-icons prefix black-text">lock</i>
+	          						<input id="icon_telephone" type="password" name="frmpass" class="validate">
+	          						<label for="icon_telephone">Contraseña</label>
+								</div>
+								
+								<div class="input-field col s12">
+									<i class="material-icons prefix black-text">lock</i>
+									<input id="icon_telephone" type="password" name="frmpass" class="validate">
+									<label for="icon_telephone"> Confirme contraseña</label>
+								</div>
+
+								<div class="input-field col s6 offset-s6">
+				  					<button class="btn waves-effect blue" type="submit" name="btnlog">Registrar
+				   						<i class="material-icons right">send</i>
+				  					</button>
+        						</div>
+							</form>
+						</div>
+					</div>
+					<div class="col s12 m4 l3"></div>
+				</div>
+			</div>	
+			  	
+      	</div>
+      	</div>
+      </div>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript">
     	function FormAlumno() {
     		// body...
@@ -55,39 +194,5 @@
 	        $('#bton2').toggle();
 	      }
     </script>
-</head>
-
-<body>
-	 <div class="row full">
-      <div class="col s6 full " id="bton" style="padding: 0px;">
-      	<!-- Registro normal -->
-      	<a onclick="FormAlumno();" class="waves-effect waves-light btn full">
-      	<div class="centrar">
-      		<p>Estudiante</p>
-      	</div>
-      </a>
-      </div>
-      <div class="col s6 full" id="bton2" style="padding: 0px;">
-      	<a onclick="FormInsti();"  class="waves-effect btn waves-red full">
-      		<div class="centrar">
-      		<p>Institucion</p>
-      		</div>
-      </a>
-      </div>
-      <div class="col s12 light-blue lighten-4 full" id="regAlumno" style="display: none"> 
-      	<div class="centrar">
-          <button onclick="AtrasFA();">Atras</button>
-      		<p>Formulario alumno</p>
-      		
-      	</div>
-      </div>
-      <div class="col s12 light-blue lighten-4 full" id="regInstitucion" style="display: none"> 
-      	<div class="centrar">
-          <button onclick="AtrasFI();">Atras</button>
-      		<p>Formulario institucion</p>
-      		
-      	</div>
-      </div>
-    </div>
 </body>
 </html>
